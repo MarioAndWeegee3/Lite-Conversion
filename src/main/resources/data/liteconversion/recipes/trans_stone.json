@@ -1,0 +1,15 @@
+{
+    "type":"minecraft:crafting_shapeless",
+    "ingredients":[
+        {"item":"minecraft:redstone"},
+        {"item":"minecraft:redstone"},
+        {"item":"minecraft:glowstone_dust"},
+        {"item":"minecraft:glowstone_dust"},
+        {"item":"minecraft:lapis_lazuli"},
+        {"item":"minecraft:lapis_lazuli"}
+    ],
+    "result":{
+        "item":"liteconversion:trans_stone",
+        "count":16
+    }
+}
