@@ -4,14 +4,14 @@ import io.github.cottonmc.cotton.tweaker.RecipeTweaker;
 import io.github.cottonmc.cotton.tweaker.TweakerUtils;
 
 public class ConversionFunctions {
-    public static void addRecipe(String input, String output, int inCount, int outCount, boolean reversable){
+    public static void addRecipe(String input, String output, int inCount, int outCount, boolean reversible){
         String[] inputs = new String[inCount+1];
         inputs[0] = "liteconversion:trans_stone";
         for(int i = 1; i < inCount+1; i++){
             inputs[i] = input;
         }
         RecipeTweaker.addShapeless(inputs, TweakerUtils.createItemStack(output, outCount));
-        if(reversable){
+        if(reversible){
             addRecipe(output, input, outCount, inCount, false);
         }
     }
