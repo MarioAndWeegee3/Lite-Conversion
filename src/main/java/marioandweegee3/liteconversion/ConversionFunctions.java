@@ -1,5 +1,7 @@
 package marioandweegee3.liteconversion;
 
+import java.util.Map;
+
 import io.github.cottonmc.cotton.tweaker.RecipeTweaker;
 import io.github.cottonmc.cotton.tweaker.TweakerUtils;
 
@@ -34,5 +36,20 @@ public class ConversionFunctions {
             if(next >= numItems) next = 0;
             addRecipe(inputs[i], inputs[next], 1, 1, false);
         }
+    }
+    
+    public static void addMultiRecipe(Map<String, Integer> inputs, String output, int outCount){
+        int totalRecipeNum = 1;
+        for(int num : inputs.values()){
+            totalRecipeNum += num;
+        }
+        String[] recipeIn = new String[totalRecipeNum];
+        recipeIn[0] = "liteconversion:trans_stone";
+        for(Map.Entry<String, Integer> entry : inputs.entrySet()){
+            for(int i = 1; i < entry.getValue()+1; i++){
+                recipeIn[i] = entry.getKey();
+            }
+        }
+        RecipeTweaker.addShapeless(recipeIn, TweakerUtils.createItemStack(output, outCount));
     }
 }
