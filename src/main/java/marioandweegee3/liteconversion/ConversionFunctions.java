@@ -38,16 +38,18 @@ public class ConversionFunctions {
         }
     }
     
-    public static void addMultiRecipe(Map<String, Integer> inputs, String output, int outCount){
+    public static void addMultiRecipe(Map<String, String> inputs, String output, int outCount){
         int totalRecipeNum = 1;
-        for(int num : inputs.values()){
-            totalRecipeNum += num;
+        for(String count : inputs.values()){
+            totalRecipeNum += Integer.parseInt(count);
         }
         String[] recipeIn = new String[totalRecipeNum];
         recipeIn[0] = "liteconversion:trans_stone";
-        for(Map.Entry<String, Integer> entry : inputs.entrySet()){
-            for(int i = 1; i < entry.getValue()+1; i++){
-                recipeIn[i] = entry.getKey();
+        int recipeCount = 1;
+        for(Map.Entry<String, String> entry : inputs.entrySet()){
+            for(int i = 0; i < Integer.parseInt(entry.getValue()); i++){
+                recipeIn[recipeCount] = entry.getKey();
+                recipeCount++;
             }
         }
         RecipeTweaker.addShapeless(recipeIn, TweakerUtils.createItemStack(output, outCount));
