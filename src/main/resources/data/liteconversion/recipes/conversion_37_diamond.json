@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "liteconversion:trans_stone"
+        },
+        {
+            "item": "gold_ingot"
+        },
+        {
+            "item": "gold_ingot"
+        },
+        {
+            "item": "gold_ingot"
+        },
+        {
+            "item": "gold_ingot"
+        }
+    ],
+    "result": {
+        "item": "diamond",
+        "count": 1
+    }
+}

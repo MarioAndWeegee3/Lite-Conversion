@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "liteconversion:trans_stone"
+        },
+        {
+            "item": "minecraft:andesite"
+        }
+    ],
+    "result": {
+        "item": "minecraft:diorite",
+        "count": 1
+    }
+}

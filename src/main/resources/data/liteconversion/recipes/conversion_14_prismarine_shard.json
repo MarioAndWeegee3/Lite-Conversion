@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "liteconversion:trans_stone"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        }
+    ],
+    "result": {
+        "item": "prismarine_shard",
+        "count": 1
+    }
+}

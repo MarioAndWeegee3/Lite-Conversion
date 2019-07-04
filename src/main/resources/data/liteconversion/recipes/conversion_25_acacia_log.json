@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "liteconversion:trans_stone"
+        },
+        {
+            "item": "minecraft:birch_log"
+        }
+    ],
+    "result": {
+        "item": "minecraft:acacia_log",
+        "count": 1
+    }
+}

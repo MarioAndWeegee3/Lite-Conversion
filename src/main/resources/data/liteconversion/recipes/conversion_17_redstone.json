@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "liteconversion:trans_stone"
+        },
+        {
+            "item": "clay_ball"
+        },
+        {
+            "item": "clay_ball"
+        },
+        {
+            "item": "clay_ball"
+        },
+        {
+            "item": "clay_ball"
+        }
+    ],
+    "result": {
+        "item": "redstone",
+        "count": 2
+    }
+}
