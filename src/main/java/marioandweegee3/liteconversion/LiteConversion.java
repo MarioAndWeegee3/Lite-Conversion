@@ -1,30 +1,27 @@
 package marioandweegee3.liteconversion;
 
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
-
-import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
-import net.minecraft.util.Identifier;
-import net.minecraft.util.registry.Registry;
+import net.minecraftforge.event.RegistryEvent;
+import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
-public class LiteConversion implements ModInitializer{
-    public static String modID = "liteconversion";
+@Mod(LiteConversion.modid)
+public class LiteConversion{
+    public static final String modid = "liteconversion";
+    public static LiteConversion instance;
 
-    public static final Logger logger = LogManager.getLogger("Lite Conversion");
+    public LiteConversion(){
+        instance = this;
 
-    @Override
-    public void onInitialize() {
-        Item trans_stone = new Item(new Item.Settings().group(ItemGroup.MISC));
-        register(trans_stone, "trans_stone");
-    }
-    
-    public static void register(Item item, String name){
-        Registry.register(Registry.ITEM, makeID(name), item);
+        FMLJavaModLoadingContext.get().getModEventBus().addGenericListener(Item.class, this::registerItems);
     }
 
-    public static Identifier makeID(String name){
-        return new Identifier(modID, name);
+    @SubscribeEvent
+    public void registerItems(RegistryEvent.Register<Item> event){
+        event.getRegistry().registerAll(
+            new Item(new Item.Properties().group(ItemGroup.MISC)).setRegistryName(modid, "trans_stone")
+        );
     }
 }
