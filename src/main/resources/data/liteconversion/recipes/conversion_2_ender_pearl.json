@@ -1,0 +1,24 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        }
+    ],
+    "result": {
+        "item": "ender_pearl",
+        "count": 1
+    }
+}

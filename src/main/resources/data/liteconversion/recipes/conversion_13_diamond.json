@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "emerald"
+        }
+    ],
+    "result": {
+        "item": "diamond",
+        "count": 2
+    }
+}

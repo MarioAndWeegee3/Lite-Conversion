@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "sandstone"
+        }
+    ],
+    "result": {
+        "item": "gravel",
+        "count": 1
+    }
+}

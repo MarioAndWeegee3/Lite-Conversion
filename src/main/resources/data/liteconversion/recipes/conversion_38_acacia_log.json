@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "jungle_log"
+        }
+    ],
+    "result": {
+        "item": "acacia_log",
+        "count": 1
+    }
+}

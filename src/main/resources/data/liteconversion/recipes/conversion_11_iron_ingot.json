@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "blaze_powder"
+        }
+    ],
+    "result": {
+        "item": "iron_ingot",
+        "count": 3
+    }
+}

@@ -1,0 +1,36 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "glowstone_dust"
+        },
+        {
+            "item": "glowstone_dust"
+        },
+        {
+            "item": "glowstone_dust"
+        },
+        {
+            "item": "glowstone_dust"
+        },
+        {
+            "item": "glowstone_dust"
+        },
+        {
+            "item": "glowstone_dust"
+        },
+        {
+            "item": "glowstone_dust"
+        },
+        {
+            "item": "glowstone_dust"
+        }
+    ],
+    "result": {
+        "item": "blaze_rod",
+        "count": 1
+    }
+}

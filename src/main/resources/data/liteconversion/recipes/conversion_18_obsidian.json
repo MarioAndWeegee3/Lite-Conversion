@@ -1,0 +1,18 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "tag": "minecraft:logs"
+        },
+        {
+            "tag": "minecraft:logs"
+        }
+    ],
+    "result": {
+        "item": "obsidian",
+        "count": 1
+    }
+}

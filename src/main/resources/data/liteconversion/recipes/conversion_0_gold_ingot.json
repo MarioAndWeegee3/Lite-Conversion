@@ -1,0 +1,36 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        },
+        {
+            "item": "iron_ingot"
+        }
+    ],
+    "result": {
+        "item": "gold_ingot",
+        "count": 1
+    }
+}

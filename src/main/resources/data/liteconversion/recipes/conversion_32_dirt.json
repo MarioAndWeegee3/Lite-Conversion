@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "sand"
+        }
+    ],
+    "result": {
+        "item": "dirt",
+        "count": 1
+    }
+}

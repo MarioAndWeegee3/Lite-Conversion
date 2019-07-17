@@ -1,0 +1,15 @@
+{
+    "type": "crafting_shapeless",
+    "ingredients": [
+        {
+            "tag": "liteconversion:conversion_stone"
+        },
+        {
+            "item": "oak_log"
+        }
+    ],
+    "result": {
+        "item": "birch_log",
+        "count": 1
+    }
+}
