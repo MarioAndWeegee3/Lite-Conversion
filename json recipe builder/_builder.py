@@ -50,7 +50,7 @@ def removeTagMarker(string):
 def makeNormalRecipe(input, output, inCount = 1, outCount = 1, reversible = True):
     recipe = open(getRecipeFileName(output), "w")
     ingredients = []
-    ingredients.append({"item":"liteconversion:trans_stone"})
+    ingredients.append({"tag":"liteconversion:conversion_stone"})
     for i in range(1, inCount+1):
         ingredients.append({tagOrItem(input):removeTagMarker(input)})
     result = {
@@ -73,7 +73,7 @@ def makeCycle(items):
 def makeMultiRecipe(inputs, output, outCount = 1):
     recipe = open(getRecipeFileName(output), "w")
     ingredients = []
-    ingredients.append({"item":"liteconversion:trans_stone"})
+    ingredients.append({"tag":"liteconversion:conversion_stone"})
 
 
     totalAmount = 1
@@ -93,6 +93,8 @@ def makeMultiRecipe(inputs, output, outCount = 1):
     recipe.write(json.dumps(recipeJson, indent = 4))
 
 def getRecipes():
+    global numRecipes
+    numRecipes = int(input("Enter the starting number for your recipes. Normally, this is 0. : "))
     print("This is for normal recipes.")
     while True:
         inputItem = str(input("Input the namespaced id for the input: "))
