@@ -20,6 +20,9 @@
   "entrypoints": {
     "main": [
       "marioandweegee3.liteconversion.LiteConversion"
+    ],
+    "modmenu":[
+      "marioandweegee3.liteconversion.config.ConfigScreen"
     ]
   },
 
