@@ -1,3 +1,7 @@
 {
-    "item.liteconversion.trans_stone":"Transmutation Stone"
+    "item.liteconversion.trans_stone":"Transmutation Stone",
+
+    "text.autoconfig.liteconversion.title":"Lite Conversion",
+    "text.autoconfig.liteconversion.option.blockConversionList":"Block Conversion Recipes",
+    "text.autoconfig.liteconversion.option.blockConversionList.@Tooltip":"Use ';' to separate recipes, and use ',' to separate blocks"
 }
