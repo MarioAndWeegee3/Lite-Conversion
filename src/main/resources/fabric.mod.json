@@ -20,13 +20,15 @@
   "entrypoints": {
     "main": [
       "marioandweegee3.liteconversion.LiteConversion"
+    ],
+    "modmenu":[
+      "marioandweegee3.liteconversion.config.ConfigScreen"
     ]
   },
 
   "requires": {
     "fabricloader": ">=0.4.0",
-    "fabric": "*",
-    "cotton": ">=0.7.0+1.14.2"
+    "fabric": "*"
   },
   "suggests": {
     "flamingo": "*"

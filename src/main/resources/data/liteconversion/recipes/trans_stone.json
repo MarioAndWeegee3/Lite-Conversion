@@ -1,12 +1,12 @@
 {
-    "type":"minecraft:crafting_shapeless",
+    "type":"crafting_shapeless",
     "ingredients":[
-        {"item":"minecraft:redstone"},
-        {"item":"minecraft:redstone"},
-        {"item":"minecraft:glowstone_dust"},
-        {"item":"minecraft:glowstone_dust"},
-        {"item":"minecraft:lapis_lazuli"},
-        {"item":"minecraft:lapis_lazuli"}
+        {"item":"redstone"},
+        {"item":"redstone"},
+        {"item":"glowstone_dust"},
+        {"item":"glowstone_dust"},
+        {"item":"lapis_lazuli"},
+        {"item":"lapis_lazuli"}
     ],
     "result":{
         "item":"liteconversion:trans_stone",
