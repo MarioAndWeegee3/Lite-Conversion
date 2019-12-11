@@ -1,0 +1,11 @@
+{
+    "required":true,
+    "package":"marioandweegee3.liteconversion.mixin",
+    "mixins":[
+        "RecipeRemainderMixin",
+        "PleaseWork"
+    ],
+    "injectors":{
+        "defaultRequire":1
+    }
+}

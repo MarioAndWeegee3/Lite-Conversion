@@ -1,5 +1,6 @@
 {
     "item.liteconversion.trans_stone":"Transmutation Stone",
+    "item.liteconversion.infinite_stone":"Infinite Transmutation Stone",
 
     "text.autoconfig.liteconversion.title":"Lite Conversion",
     "text.autoconfig.liteconversion.category.default":"Default",

@@ -6,6 +6,7 @@ import java.util.Map;
 
 import io.github.cottonmc.libcd.tweaker.RecipeTweaker;
 import io.github.cottonmc.libcd.tweaker.TweakerUtils;
+import net.minecraft.item.Item;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapelessRecipe;
 import net.minecraft.util.DefaultedList;
@@ -36,7 +37,8 @@ public class ConversionTweaker {
 
         DefaultedList<Ingredient> ingredients = DefaultedList.of();
         for (String item : inputs) {
-            ingredients.add(RecipeTweaker.INSTANCE.makeIngredient("none", item));
+            if(item.startsWith("#")) ingredients.add(Ingredient.ofItems(getItemsInTag(item.replace("#", ""))));
+            else ingredients.add(Ingredient.ofItems(TweakerUtils.INSTANCE.getItem(item)));
         }
         
         RecipeTweaker.INSTANCE.addRecipe(new ShapelessRecipe(makeRecipeID(output), "", TweakerUtils.INSTANCE.createItemStack(output, outCount), ingredients));
@@ -63,15 +65,24 @@ public class ConversionTweaker {
         addRecipe(input, output, 1, 1, true);
     }
 
-    public int getNext(String[] values, int current){
+    private int getNext(String[] values, int current){
         if(current + 1 >= values.length) return 0;
         else return current + 1;
     }
 
-    public void addCycle(String... values){
+    public void addCycle(String[] values){
         for(int i = 0; i < values.length; i++){
             addRecipe(values[i], values[getNext(values, i)], false);
         }
+    }
+
+    private Item[] getItemsInTag(String tagId){
+        String[] items = TweakerUtils.INSTANCE.getItemsInTag(tagId);
+        ArrayList<Item> itemList = new ArrayList<>(0);
+        for(String item : items){
+            itemList.add(TweakerUtils.INSTANCE.getItem(item));
+        }
+        return itemList.toArray(new Item[0]);
     }
 
     public void addMultiRecipe(Map<String, Integer> input, String output, int outCount){
@@ -85,7 +96,8 @@ public class ConversionTweaker {
 
         DefaultedList<Ingredient> ingredients = DefaultedList.of();
         for (String item : inputs) {
-            ingredients.add(RecipeTweaker.INSTANCE.makeIngredient("none", item));
+            if(item.startsWith("#")) ingredients.add(Ingredient.ofItems(getItemsInTag(item.replace("#", ""))));
+            else ingredients.add(Ingredient.ofItems(TweakerUtils.INSTANCE.getItem(item)));
         }
         
         RecipeTweaker.INSTANCE.addRecipe(new ShapelessRecipe(makeRecipeID(output), "", TweakerUtils.INSTANCE.createItemStack(output, outCount), ingredients));

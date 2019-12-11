@@ -1,0 +1,17 @@
+{
+    "type":"crafting_shaped",
+    "pattern":[
+        "RGR",
+        "LDL",
+        "RGR"
+    ],
+    "key":{
+        "R":{"item":"redstone_block"},
+        "G":{"item":"glowstone"},
+        "L":{"item":"lapis_block"},
+        "D":{"item":"diamond_block"}
+    },
+    "result":{
+        "item":"liteconversion:infinite_stone"
+    }
+}

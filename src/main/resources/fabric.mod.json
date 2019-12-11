@@ -25,8 +25,11 @@
       "marioandweegee3.liteconversion.config.ConfigScreen"
     ]
   },
+  "mixins":[
+    "mixins.liteconversion.json"
+  ],
 
-  "requires": {
+  "depends": {
     "fabricloader": ">=0.4.0",
     "fabric": "*"
   },
