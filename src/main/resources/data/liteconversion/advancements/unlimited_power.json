@@ -1,0 +1,29 @@
+{
+    "parent":"liteconversion:lite_conversion",
+    "display":{
+        "icon":{
+            "item":"liteconversion:infinite_stone"
+        },
+        "title":{
+            "translate":"advancement.liteconversion.unlimited_power"
+        },
+        "description":{
+            "translate":"advancement.liteconversion.unlimited_power.description"
+        }
+    },
+    "criteria":{
+        "item_get":{
+            "trigger":"inventory_changed",
+            "conditions":{
+                "items":[
+                    {
+                        "item":"liteconversion:infinite_stone"
+                    }
+                ]
+            }
+        }
+    },
+    "rewards":{
+        "experience":10
+    }
+}

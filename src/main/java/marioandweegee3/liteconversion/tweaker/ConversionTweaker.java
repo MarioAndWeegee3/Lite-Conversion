@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-import io.github.cottonmc.libcd.tweaker.RecipeTweaker;
-import io.github.cottonmc.libcd.tweaker.TweakerUtils;
+import io.github.cottonmc.libcd.api.tweaker.recipe.RecipeTweaker;
+import io.github.cottonmc.libcd.api.tweaker.util.TweakerUtils;
 import net.minecraft.item.Item;
 import net.minecraft.recipe.Ingredient;
 import net.minecraft.recipe.ShapelessRecipe;
@@ -18,7 +18,7 @@ public class ConversionTweaker {
 
     private Identifier makeRecipeID(String output){
         recipeNum++;
-        return new Identifier("liteconversion", "conversion_"+recipeNum+"_"+getPath(output));
+        return new Identifier("liteconversion", "conversion/"+recipeNum+"_"+getPath(output));
     }
 
     private String getPath(String id){

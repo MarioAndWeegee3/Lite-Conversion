@@ -23,6 +23,9 @@
     ],
     "modmenu":[
       "marioandweegee3.liteconversion.config.ConfigScreen"
+    ],
+    "libcd":[
+      "marioandweegee3.liteconversion.LiteConversion"
     ]
   },
   "mixins":[
